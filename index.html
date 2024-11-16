@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EbayTicket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">EbayTicket</div>
+        <nav>
+            <ul class="nav-left">
+                <li><a href="#">Billetterie</a></li>
+                <li><a href="#">Mon Panier</a></li>
+            </ul>
+            <ul class="nav-right">
+                <li><a href="#">Historique</a></li>
+                <li><a href="#">Entreprise</a></li>
+                <li><a href="#" id="terms-link">Conditions légales</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>La solution pour vos billets en ligne</h1>
+        <p>Un service rapide, simple et sécurisé pour acheter vos billets en toute tranquillité.</p>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <input type="email" placeholder="Votre email">
+        <button>Obtenez vos billets</button>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-info">
+            <div class="countdown">
+                <h3>Comptez les heures</h3>
+                <div id="timer">
+                    <i class="fa fa-clock"></i>
+                    <span id="timer-text">00:00:00</span>
+                </div>
+            </div>
+            <div class="price">
+                <h3>Prix du ticket</h3>
+                <div id="price">
+                    <i class="fa fa-ticket"></i>
+                    <span id="ticket-price">15.5 ETH</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Deuxième Compte à rebours -->
+        <div class="countdown">
+            <h2>Compte à rebours</h2>
+            <div id="timer2">
+                <i class="fa fa-clock"></i>
+                <span id="timer-text2">00:00:00</span>
+            </div>
+        </div>        
+    </footer>
+
+    <!-- Modal Conditions Légales -->
+    <div class="modal" id="terms-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <h2>Conditions légales</h2>
+            <p>Veuillez lire attentivement ces conditions légales avant d'utiliser notre site. Ces conditions régissent votre utilisation du site ainsi que des services associés...</p>
+            <p>1. Introduction<br>2. Collecte d'informations<br>3. Utilisation des services...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
